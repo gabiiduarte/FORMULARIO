@@ -7,29 +7,26 @@
     <link rel="stylesheet" href="style.css">
     <title>perfil da gabrieli</title>
 </head>
-<body>
+ <h1>Formulário com Validação em Tempo Real</h1>
+    <form id="myForm">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+        <span class="error" id="nameError"></span>
+        <br>
 
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <span class="error" id="emailError"></span>
+        <br>
 
-<p>Um tipo de <b>FORMULÁRIO</b> -<color><a>A</a></color></p>
-<div id="formularioa">
-<form action="#">
-  <label for="fname">Primeiro Nome</label><br>
-  <input type="text" id="fname" name="fname" value=""><br>
-  <label for="lname">Email</label><br>
-  <input type="text" id="lname" name="lname" value=""><br><br>
-  <input type="submit" value="enviar">
-</form><hr />
-</div>
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required minlength="6">
+        <span class="error" id="passwordError"></span>
+        <br>
 
-<div>
-<p>Comentários:</p>
+        <input type="submit" value="Enviar">
+    </form>
 
-<form action="#">
-  <p><label for="w3review">Não precisa comentar, é só um exemplo:</label></p>
-  <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
-  <br>
-  <input type="submit" value="enviar">
-</form><hr />
-</div>
-  </body>
+    <script src="script.js"></script>
+
 </html>
